@@ -1,0 +1,16 @@
+#bg-view{
+  background-image: url('img/chicken.jpg');
+  background-size: cover;
+  height: 882px;
+  background-repeat: no-repeat;
+}
+#cover-overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  height: 425px;
+  text-align: center;
+}
+.container{
+    margin: auto;
+    padding: 200px;
+    }
