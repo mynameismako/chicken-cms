@@ -1,3 +1,6 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
 #bg-view{
   background-image: url('img/chicken.jpg');
   background-size: cover;
