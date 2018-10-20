@@ -154,7 +154,7 @@
                     <tbody>
                         <tr>
                             <th>6</th>
-                            <th>Kwakwa@17.3kg</th>
+                            <th>Kwakwa @ 17.3kg</th>
                             <th>SRD 103.02</th>
                         </tr>
                     </tbody>
