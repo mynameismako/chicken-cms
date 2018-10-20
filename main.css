@@ -4,7 +4,8 @@ body {
 #bg-view{
   background-image: url('img/chicken.jpg');
   background-size: cover;
-  height: 882px;
+  height: inherit;
+  width: inherit;
   background-repeat: no-repeat;
 }
 #cover-overlay{
