@@ -1,3 +1,9 @@
 body {
     font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+body.larger{
+    font-size: 120%;
 }
