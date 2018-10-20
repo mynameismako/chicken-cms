@@ -35,10 +35,13 @@
                 </ul>
 
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-3">
+                        <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#bonModal">bon</button>
+                    </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="logindrop" data-toggle="dropdown">Rushil</a>
                         <div class="dropdown-menu text-center">
-                            <button class="dropdown-item" id="toggleText">Large Text</button>
+                            <a href="#" class="dropdown-item">About</a>
                             <div class="dropdown-divider"></div>
                             <a href="#" class="dropdown-item">Logout</a>
                         </div>
@@ -91,9 +94,9 @@
                                 </label>
                             </div>
                             <div class="mt-3">
-                                <button type="submit" class="btn btn-secondary btn-lg btn-block">Toevoegen aan bon</button>
+                                <button type="submit" class="btn btn-secondary btn-lg btn-block">toevoegen aan bon</button>
                                 <hr>
-                                <button type="reset" class="btn btn-danger btn-lg btn-block">Reset</button>
+                                <button type="reset" class="btn btn-danger btn-lg btn-block">reset</button>
                             </div>
                         </form>
                     </div>
@@ -110,20 +113,59 @@
                             <div class="form-group">
                                 <label for="soort">soort: </label>
                                 <select class="form-control form-control-lg" id="soort" name="soort" required>
-                                    <option value="" disabled selected>Selecteer een kipsoort...</option>
+                                    <option value="" disabled selected>selecteer een kipsoort...</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
                                 </select>
                             </div>
                             <div class="mt-3">
-                                <button type="submit" class="btn btn-secondary btn-lg btn-block">Toevoegen aan bon</button>
+                                <button type="submit" class="btn btn-secondary btn-lg btn-block">toevoegen aan bon</button>
                                 <hr>
-                                <button type="reset" class="btn btn-danger btn-lg btn-block">Reset</button>
+                                <button type="reset" class="btn btn-danger btn-lg btn-block">reset</button>
                             </div>
                         </form>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="bonModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">bon</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>aantal</th>
+                            <th>item</th>
+                            <th>prijs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>6</th>
+                            <th>Kwakwa@17.3kg</th>
+                            <th>SRD 103.02</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
             </div>
         </div>
     </div>
