@@ -7,7 +7,7 @@ background-color: #434343;
 .frame{
 background-color: white;
 width: 1000px;
-height: 700px;
+height: inherit;
 margin-top: 20px;
 margin-left: 150px;
 }
@@ -63,7 +63,30 @@ margin-left: 150px;
 }
 .form-div{
   margin-left: 40px;
+  margin-right: 40px;
 }
 #nav-div{
   margin-left: 400px;
+}
+#line{
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.frame-inside{
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.form-div{
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+#form-inline-div{
+  border-radius: 0px;
+}
+.table-align{
+  text-align: center;
+}
+.bottom-spacing{
+  height:20px;
 }
