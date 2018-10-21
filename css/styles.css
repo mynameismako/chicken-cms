@@ -1,0 +1,69 @@
+body{
+  background-color: #cccccc;
+}
+#navbar{
+background-color: #434343;
+}
+.frame{
+background-color: white;
+width: 1000px;
+height: 700px;
+margin-top: 20px;
+margin-left: 150px;
+}
+.out-frame{
+  height:inherit;
+  margin-top: 50px;
+}
+#font{
+  color: white;
+}
+#click-options{
+  background-color: white;
+  border-color: #434343;
+  border-radius: 0px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.line{
+  height:1px;
+  width: 700px;
+  background-color: black;
+  margin-left: 10px;
+}
+#click-options-winkel{
+  margin-top: 10px;
+  border-radius: 8px;
+  background-color: white;
+  border-color: #434343;
+  margin-left: 10px;
+  border-bottom: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.inside-frame{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#input-width{
+  width: 200px;
+  border-radius: 0px;
+}
+#button-accepteren{
+  width: 200px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 0px;
+}
+#click-options-winkel-div{
+  margin-left: 40px;
+}
+.click-options-div{
+  margin-left: 40px;
+}
+.form-div{
+  margin-left: 40px;
+}
+#nav-div{
+  margin-left: 400px;
+}
