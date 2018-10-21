@@ -1,3 +1,12 @@
+<?php 
+
+require('assets/includes/session.php');
+require('assets/includes/database.php');
+require('assets/includes/functions.php');
+require('assets/includes/bon.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +16,7 @@
     <title>Aniel's Kippencentrum</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -31,6 +41,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Klantregistratie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="test.php">test</a>
                     </li>
                 </ul>
 
@@ -65,7 +78,7 @@
             <div class="tab-pane container active" id="intern">
                 <div class="row">
                     <div class="col-md-5">
-                        <form action="" autocomplete="off">
+                        <form action="database/intern_bon_insert.php" autocomplete="off" method="POST">
                             <div class="form-group">
                                 <label for="aantal">aantal: </label>
                                 <input type="number" required name="aantal" id="aantal" class="form-control form-control-lg" min="0" step="1">
@@ -90,7 +103,7 @@
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="checkbox"> Schoonmaak
+                                    <input type="checkbox" name="schoonmaak" value="true"> Schoonmaak
                                 </label>
                             </div>
                             <div class="mt-3">
@@ -105,7 +118,7 @@
             <div class="tab-pane container fade" id="extern">
                 <div class="row">
                     <div class="col-md-5">
-                        <form action="">
+                        <form action="database/extern_bon_insert.php" autocomplete="off" method="POST">
                             <div class="form-group">
                                 <label for="aantal">aantal: </label>
                                 <input type="number" required name="aantal" id="aantal" class="form-control form-control-lg" min="0" step="1">
@@ -132,7 +145,7 @@
     </div>
 
     <div class="modal" id="bonModal">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
             <!-- Modal Header -->
@@ -143,7 +156,7 @@
 
             <!-- Modal body -->
             <div class="modal-body">
-                <table class="table">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>aantal</th>
@@ -157,8 +170,24 @@
                             <th>Kwakwa @ 17.3kg</th>
                             <th>SRD 103.02</th>
                         </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Kwakwa @ 17.3kg</th>
+                            <th>SRD 103.02</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Kwakwa @ 17.3kg</th>
+                            <th>SRD 103.02</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="float-right"><strong> Total: </strong></th>
+                            <th>SRD 309.06</th>
+                        </tr>
                     </tbody>
                 </table>
+                <a href="#" class="btn btn-outline-dark float-right"><i class="fas fa-print"></i> Print</a>
             </div>
 
             <!-- Modal footer -->
