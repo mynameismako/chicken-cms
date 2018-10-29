@@ -13,14 +13,6 @@ body{
   height: 425px;
   text-align: center;
 }
-.container-frame{
-    margin: auto;
-    padding: 200px;
-    }
-
-#navbar{
-background-color: #434343;
-}
 .frame{
 background-color: white;
 width: 1000px;
@@ -33,7 +25,7 @@ margin-left: 150px;
   margin-top: 50px;
 }
 #font{
-  color: white;
+  text-align: center;
 }
 #click-options{
   background-color: white;
@@ -66,12 +58,6 @@ margin-left: 150px;
   width: 200px;
   border-radius: 0px;
 }
-#button-accepteren{
-  width: 200px;
-  background-color: white;
-  margin-top: 10px;
-  border-radius: 0px;
-}
 #click-options-winkel-div{
   margin-left: 40px;
 }
@@ -81,9 +67,6 @@ margin-left: 150px;
 .form-div{
   margin-left: 40px;
   margin-right: 40px;
-}
-#nav-div{
-  margin-left: 400px;
 }
 #line{
   margin-top: 20px;
@@ -104,9 +87,12 @@ margin-left: 150px;
 .table-align{
   text-align: center;
 }
-.bottom-spacing{
-  height:20px;
+.frame-spacing{
+  height: 20px;
 }
-.bon-div{
-  margin-left: 50px;
+.out-frame{
+    margin-top: 100px;
+}
+.space{
+    height: 20px;
 }
